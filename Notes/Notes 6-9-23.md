@@ -18,7 +18,7 @@
 
 ***
 
-## Week 2 of Course 1
+## Week 2 of Course 2
 * **Binary Classification** is the classification of data into one of two categories.
 
 * **Binary Classification** is commonly implemented through **Logistic Regression** which is a supervised learning algorithm relying on an activation function to compute the probability of an event occuring.
