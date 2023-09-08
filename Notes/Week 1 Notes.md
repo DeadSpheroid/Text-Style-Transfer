@@ -16,7 +16,7 @@ Neuron--Inputs size computes size, takes max as zero and outputs price
 
 ReLu—Rectified Linear Unit
 
-Many neurons a Large Neural Network
+Many neurons--> a Large Neural Network
 
 ---
 
