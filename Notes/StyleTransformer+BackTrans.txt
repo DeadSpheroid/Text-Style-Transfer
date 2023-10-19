@@ -1,0 +1,46 @@
+# Style Transformer https://arxiv.org/pdf/1905.05621v3.pdf (Non parallel corpora) (No disentanglement of style and content)
+- What is the architecture like? 
+A transformer is fed the input sentence x along with the target style variable s 
+Along the way a discriminator (also a transformer) is also trained to classify the style of a sentence.
+
+If the input style of sentence is same as its actual style, then it will be trained to regenerate the input.
+Else the sentence is fed to the transformer to generate y'
+and this y' is fed back to the transformer and discriminator to ensure that x is reconstructed along with s'
+
+To avoid degeneration when the model just copies the input sentence back, we feed y' to the discriminator to maximize the likelihood of 
+s', i.e. the desired style is obtained.
+
+- How do they evaluate the performance of the model?
+Style Control is evaluated using sentiment classifier models
+Content Preservation is evaluated using BLEU between predicted and source sentences, as well as BLEU between predicted and human references.
+
+However, the authors acknowledged the insufficiency of these and also used human evaluators, generating three outputs for one input sentence and showing all the three to the human asking which one is most fluent, which one preserves the most content and which one represents the desired style. (no preference was also an option)
+
+- What are the losses used?
+Three losses are used, one for the case when input sentence already has the desired style, which is the reconstruction loss
+One is the case when generated sentence is fed back to the transformer to see whether we get the original sentence back which is
+cycle loss.
+The final is the style loss which makes sure that generated sentence when fed to the discriminator has the desired style.
+
+
+
+# Back-Translation https://arxiv.org/pdf/1804.09000v3.pdf (Non parallel corpora)
+- What is the architecture like?
+First compute a style-less latent representation using a Machine Translation model.
+That is, the input sentence x is first translated to another language (say french) via an encoder-decoder network.
+Then the output is fed back into the encoder of the back translation model (french to english) and this results in our representation z.
+
+For the task of, say, positive <-> negative, we have a dataset consisting of examples of positive and another dataset consisting of examples of negative. After encoding z through back translation, we train two separate decoders (BiLSTM + global attention) for pos to neg and neg to pos.
+*(Unlike Style Transformer where we had a style variable, here we only focus on two at a time)
+
+In addition to all of this, a classifier (CNN) is used to ensure that the output has the desired style (classifier is trained on labelled examples)
+
+These decoders are trained to convert a given representation z to the desired style.
+
+- How do they evaluate performance of the model?
+1) Style Transfer accuracy, evaluated using a classifier model trained on data not used in training of Style Transfer Model.
+2) Preservation of Meaning, done using human classification by comparison with the baseline model.
+3) Fluency, same as 2)
+
+- What are the losses used in training the model?
+The generator loss which includes the reconstruction loss and the classifier loss.
