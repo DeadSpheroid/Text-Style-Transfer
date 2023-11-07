@@ -34,10 +34,20 @@ The techonologies used in this project include:
         ├── Warren-Notes
         ├── Druhi-Notes
         ├── Yashvi-Notes
-    ├── Project-Report                          # Report on the project
-        ├── readme.md 
     ├── Mini-Projects                           # Mini projects made
-        ├── Deep-Neural-Network-From-scratch                
+        ├── Deep-Neural-Network-From-Scratch
+        ├── IMDB-Lstm
+        ├── MNISTDigit
+    ├── Project-Report                          # Report on the project
+        ├──  
+    ├── StyleFormer                             # StyleFormer implementation
+        ├── 
+    ├── Transformer                             # Transformer implementation
+        ├── data
+        ├── weights
+        ├── Tokenizer.ipynb
+        ├── Transformer.ipynb
+        ├── README.md
     ├── LICENSE                            
     ├── README.md                          
 
