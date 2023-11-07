@@ -41,7 +41,15 @@ The techonologies used in this project include:
     ├── Project-Report                          # Report on the project
         ├──  
     ├── StyleFormer                             # StyleFormer implementation
-        ├── 
+        ├── data
+        ├── evaluator
+        ├── models
+        ├── outputs
+        ├── data.py
+        ├── main.py
+        ├── train.py
+        ├── utils.py
+        ├── README.md
     ├── Transformer                             # Transformer implementation
         ├── data
         ├── weights
@@ -53,4 +61,31 @@ The techonologies used in this project include:
     ├── LICENSE                            
     ├── README.md                          
 
-## 
+## Contributors
+* **[Druhi Phutane](https://github.com/druhi021204)**
+
+* **[Warren Jacinto](https://github.com/DeadSpheroid)**
+
+* **[Yashvi Gala](https://github.com/Yashvi-Gala09)**
+
+## Future Prospects
+* The usage of finetuned LLMs such as GPT, PaLM, to achieve the desired fluency in Text Style Transfer.
+* Potentially use Reinforcement Learning as described [here](https://github.com/luofuli/DualRL/)
+
+## Resources and Acknowledgments
+* We are gratfeul to [CoC VJTI](https://github.com/CommunityOfCoders) and the [Project X](https://github.com/CommunityOfCoders/Project-X-2023) program.
+
+* Special thanks to our mentor [Labeeb Asari](https://github.com/labeeb-7z) for his experties and guidance throughout the project.
+
+* Additionally, we are also thankful for all the Project X mentors for their inputs and advice on our project.
+
+* Refered the official [tensorflow tutorials](https://www.tensorflow.org/tutorials) for understanding the framework.
+
+* [Andrew Ng's courses on Coursera](https://www.coursera.org/specializations/deep-learning) for an understanding of neural networks.
+
+* [Attention is All You Need](https://arxiv.org/abs/1706.03762) for understanding the Transformer architecture.
+
+* [Style Transformer: Unpaired Text Style Transfer without Disentangled Latent Representation](https://arxiv.org/abs/1905.05621) for the Style Transformer Implementation.
+
+* 
+
