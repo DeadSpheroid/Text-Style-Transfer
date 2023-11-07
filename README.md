@@ -48,6 +48,9 @@ The techonologies used in this project include:
         ├── Tokenizer.ipynb
         ├── Transformer.ipynb
         ├── README.md
+    ├── Cross Aligned 
+        ├── 
     ├── LICENSE                            
     ├── README.md                          
 
+## 
