@@ -1,3 +1,7 @@
+# About this folder
+# Note
+This folder and all its contents are taken from https://github.com/rpryzant/delete_retrieve_generate/tree/master.
+We are grateful to the original authors and utilise their implementation here.
 # Description
 
 This is an implementation of the DeleteOnly and DeleteAndRetrieve models from [Delete, Retrieve, Generate:
