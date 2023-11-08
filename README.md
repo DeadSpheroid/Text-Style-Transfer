@@ -15,7 +15,7 @@ The aim of this project is to utilise various neural network architectures to mo
 ## Description
 Text Style Transfer is the modification of style of a sentence without altering the semantic content. This can be done through a variety of different methods. 
 
-Here we have showcased 3 of the methods that we have tried to apply to solve the given problem.
+Here we have showcased 4 of the methods that we have tried to apply to solve the given problem.
 
 Namely,
 1. Transformer-only
@@ -42,12 +42,12 @@ The techonologies used in this project include:
         ├── Warren-Notes
         ├── Druhi-Notes
         ├── Yashvi-Notes
-    ├── CrossAligned
+    ├── CrossAligned                            # CrossAligned implementation
         ├── code
         ├── data
         ├── img
         ├── tmp
-    ├── DeleteRetrieveGenerate
+    ├── DeleteRetrieveGenerate                  # DeleteRetrieve implementation
         ├── data
         ├── src
         ├── tools
@@ -57,7 +57,7 @@ The techonologies used in this project include:
         ├── IMDB-Lstm
         ├── MNISTDigit
     ├── Project-Report                          # Report on the project
-        ├──  
+        ├──  Project-Report.pdf
     ├── StyleFormer                             # StyleFormer implementation
         ├── data
         ├── evaluator
@@ -103,5 +103,7 @@ The techonologies used in this project include:
 
 * [Style Transformer: Unpaired Text Style Transfer without Disentangled Latent Representation](https://arxiv.org/abs/1905.05621) for the Style Transformer Implementation.
 
-* 
+* [Style Transfer from Non-Parallel Text by Cross-Alignment](https://arxiv.org/abs/1705.09655) for the CrossAligned implementation
+
+* [Delete, Retrieve, Generate: A Simple Approach to Sentiment and Style Transfer](https://arxiv.org/pdf/1804.06437.pdf) for the DeleteRetrieve implementation
 
