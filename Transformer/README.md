@@ -32,3 +32,19 @@ The weights of the tokenizer are saved under /weights/shk_to_en_tokenizers/
 Then run Transformer.ipynb to create and train the transformer on the given data.
 
 The weights of the transformer are saved under /weights/model_weights/
+
+# Results
+A few inference examples available at the end of the notebook are shown here:
+
+**Input:** For you, Posthumus,  So soon as I can win the offended king,  I will be known your advocate: 
+
+**Prediction** : you , posthumus , as soon as i can win the offend king , i will be known as your servant .
+
+**Ground truth**: As for you, Posthumus, as soon as I can calm the upset king, I will speak in your defense.
+
+***
+**Input:** : None but the king?
+
+**Prediction:** nothing but the king ?
+
+**Ground truth:** Only the king?
