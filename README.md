@@ -2,6 +2,13 @@
 
 # About the Project
 
+## Results
+![Inputs](assets/gif1.gif)
+![CrossAligned](assets/gif2.gif) 
+
+![DeleteRetrieve](assets/gif3.gif) 
+![StyleFormer](assets/gif4.gif)
+
 ## Aim
 The aim of this project is to utilise various neural network architectures to modify the style of a sentence while preserving its meaning.
 
@@ -13,7 +20,8 @@ Here we have showcased 3 of the methods that we have tried to apply to solve the
 Namely,
 1. Transformer-only
 2. StyleFormer
-3. 
+3. DeleteRetrieveGenerate
+4. CrossAligned
 
 ## Tech Stack
 The techonologies used in this project include:
@@ -34,6 +42,16 @@ The techonologies used in this project include:
         ├── Warren-Notes
         ├── Druhi-Notes
         ├── Yashvi-Notes
+    ├── CrossAligned
+        ├── code
+        ├── data
+        ├── img
+        ├── tmp
+    ├── DeleteRetrieveGenerate
+        ├── data
+        ├── src
+        ├── tools
+        ├── working_dir
     ├── Mini-Projects                           # Mini projects made
         ├── Deep-Neural-Network-From-Scratch
         ├── IMDB-Lstm
@@ -56,8 +74,6 @@ The techonologies used in this project include:
         ├── Tokenizer.ipynb
         ├── Transformer.ipynb
         ├── README.md
-    ├── Cross Aligned 
-        ├── 
     ├── LICENSE                            
     ├── README.md                          
 
